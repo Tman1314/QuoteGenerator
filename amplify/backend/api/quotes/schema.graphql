@@ -22,7 +22,7 @@ type QuoteAppData
   id: ID!
   queryName: String!
     @index(
-      name: "QuotesQueryName"
+      name: "QuoteQueryName"
       queryField: "quoteQueryName"
     )
   quotesGenerated: Int!
