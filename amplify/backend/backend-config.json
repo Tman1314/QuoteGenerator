@@ -52,6 +52,15 @@
   "function": {
     "quoteLambda": {
       "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput"
+          ],
+          "category": "api",
+          "resourceName": "quotes"
+        }
+      ],
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
