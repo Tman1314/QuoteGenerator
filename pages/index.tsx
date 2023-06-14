@@ -61,7 +61,6 @@ export default function Home() {
         },
       })
       console.log('response', response);
-      // setNumberOfQuotes();
 
       //Create type guards
       if (!isGraphQLResultForquoteQueryName(response)) {
@@ -121,10 +120,6 @@ export default function Home() {
       // Fetch if any quotes have been generated from counter
       updateQuoteInfo();
 
-      // setProcessingQuote(false);
-      // setTimeout(() => {
-      //   setProcessingQuote(false);
-      // }, 3000)
     } catch (error) {
       console.log('error generating quote:', error);
       setProcessingQuote(false);
